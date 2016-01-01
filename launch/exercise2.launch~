@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find turtlebot_stage)/launch/turtlebot_in_stage.launch"/>	
+	<node name="keyboard" pkg="exercise2" type="keyboard_input.py" output="screen" />
+	<node name="patrol" pkg="exercise2" type="patrol.py" output="screen" />
+	<node name="markers" pkg="exercise2" type="markerdisplay.py" output="screen" />
+</launch>
+
